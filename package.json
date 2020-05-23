@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "keyword-extractor": "^0.0.19",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "promise-async": "^0.2.0"
   }
 }
