@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactWordcloud from "react-wordcloud";
+import { words } from "./data";
 
 function App() {
+  console.log(words.length);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div style={{ width: "300px" }}>
+    <div>
+      <ReactWordcloud
+        words={words}
+        options={{
+          colors: ["#C1357E", "#675997", "#0655A9"],
+        }}
+      />
     </div>
   );
 }
